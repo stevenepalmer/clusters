@@ -1,4 +1,3 @@
-[[_ TOC _]]
 # Metrics Server
 
 ## Installation

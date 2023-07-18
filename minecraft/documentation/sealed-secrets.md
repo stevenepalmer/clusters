@@ -1,5 +1,3 @@
-[[_ TOC _]]
-
 # Sealed Secrets
 
 ## Installation

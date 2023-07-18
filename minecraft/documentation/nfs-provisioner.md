@@ -1,10 +1,11 @@
-[[_ TOC _]]
 # NFS Proivisioner
 
 ## Weblink
+
 ```notes
 https://github.com/kubernetes-sigs/nfs-ganesha-server-and-external-provisioner
 ```
+
 ### Local drives
 
 ```mermaid
@@ -19,7 +20,8 @@ graph LR;
     StorageServer-->ServerNFSMountPoint-->NodeMountPoint-->Provisioner-->StorageClass;
 ```
 
-#### Server:
+#### Server
+
 Create an NFS share.  Set/Configure the share to private for security.  Setup your rule for access from the clients and get on with it.
 
 ##### Rules example

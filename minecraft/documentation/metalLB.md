@@ -1,4 +1,3 @@
-[[_ TOC _]]
 # MetalLB
 
 ```notes
