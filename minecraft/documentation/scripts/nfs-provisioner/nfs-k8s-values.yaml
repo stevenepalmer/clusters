@@ -1,0 +1,47 @@
+affinity: {}
+image:
+  pullPolicy: IfNotPresent
+  repository: registry.k8s.io/sig-storage/nfs-subdir-external-provisioner
+  tag: v4.0.2
+imagePullSecrets: []
+labels: {}
+leaderElection:
+  enabled: true
+nfs:
+  mountOptions: null
+  path: /mnt/user/nfsk8s
+  reclaimPolicy: Retain
+  server: XXX.XXX.XXX.XXX
+  volumeName: nfsk8s
+nodeSelector: {}
+podAnnotations: {}
+podDisruptionBudget:
+  enabled: false
+  maxUnavailable: 1
+podSecurityContext: {}
+podSecurityPolicy:
+  enabled: false
+rbac:
+  create: true
+replicaCount: 1
+resources: {}
+securityContext: {}
+serviceAccount:
+  annotations: {}
+  create: true
+  name: null
+storageClass:
+  accessModes: ReadWriteMany
+  allowVolumeExpansion: true
+  annotations: {}
+  archiveOnDelete: true
+  create: true
+  defaultClass: false
+  name: nfs-k8s-helm
+  onDelete: null
+  pathPattern: null
+  provisionerName: kosmok8s.com/nfs-k8s-helm-provisioner
+  reclaimPolicy: Delete
+  volumeBindingMode: Immediate
+strategyType: Recreate
+tolerations: []
